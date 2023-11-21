@@ -77,7 +77,7 @@ class MyWidget(QMainWindow):
         self.create(qp)
 
     def create(self, qp):
-        qp.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
+        qp.setBrush(QColor(255, 255, 0, 255))
         a = randint(1, 100)
         x, y = randint(a, 800 - a), randint(a, 600 - a)
         qp.drawEllipse(QPoint(int(x), int(y)), a, a)
